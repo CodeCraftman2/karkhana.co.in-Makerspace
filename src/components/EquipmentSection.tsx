@@ -99,7 +99,7 @@ export default function EquipmentSection() {
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-[1320px] mx-auto px-6 lg:px-[100px]">
         {/* Section Title */}
-        <h2 className="text-[54px] leading-tight font-medium text-black mb-16" style={{ letterSpacing: '-0.54px' }}>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[54px] leading-tight font-medium text-black mb-8 sm:mb-12 lg:mb-16" style={{ letterSpacing: '-0.02em' }}>
           Equipment you find<br />in a Maker Lab
         </h2>
 
@@ -114,8 +114,8 @@ export default function EquipmentSection() {
                   onClick={() => toggleCategory(catIndex)}
                 >
                   <div className="flex items-start gap-8">
-                    <span className="text-[34px] font-medium text-black">{category.number}</span>
-                    <h3 className="text-[34px] font-medium text-black">{category.title}</h3>
+                    <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[34px] font-medium text-black">{category.number}</span>
+                    <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[34px] font-medium text-black">{category.title}</h3>
                   </div>
                   <div className="flex items-center">
                     {isCategoryExpanded(catIndex) ? (
@@ -137,12 +137,12 @@ export default function EquipmentSection() {
                           <div className="w-[57px] h-[57px] rounded-full bg-gray-200" />
                           
                           {/* Item Name */}
-                          <h4 className="text-[21px] font-medium text-black min-h-[40px]">
+                          <h4 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-[21px] font-medium text-black min-h-[30px] sm:min-h-[35px] md:min-h-[40px]">
                             {item.name}
                           </h4>
                           
                           {/* Item Description */}
-                          <p className="text-sm font-normal text-black leading-normal">
+                          <p className="text-xs sm:text-sm md:text-base lg:text-sm xl:text-sm font-normal text-black leading-relaxed">
                             {item.description}
                           </p>
                         </div>

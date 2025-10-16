@@ -35,7 +35,7 @@ export default function TypesOfLabs() {
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-[1512px] mx-auto px-6 lg:px-[100px]">
         {/* Section Title */}
-        <h2 className="text-[42px] leading-tight font-medium text-black mb-16" style={{ letterSpacing: '-0.42px' }}>
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[42px] leading-tight font-medium text-black mb-8 sm:mb-12 lg:mb-16" style={{ letterSpacing: '-0.02em' }}>
           Types of Labs
         </h2>
 
@@ -43,14 +43,14 @@ export default function TypesOfLabs() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
           {labTypes.map((type, index) => (
             <div key={index} className="bg-white rounded-lg border border-gray-200 p-6">
-              <h3 className="text-[28px] font-medium text-black mb-6">
+              <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[28px] font-medium text-black mb-4 sm:mb-6">
                 {type.category}
               </h3>
               <ul className="space-y-2">
                 {type.labs.map((lab, labIndex) => (
                   <li 
                     key={labIndex}
-                    className="text-[18px] leading-[28px] font-normal text-black list-disc list-inside"
+                    className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-[18px] leading-relaxed font-normal text-black list-disc list-inside"
                   >
                     {lab}
                   </li>

@@ -38,7 +38,7 @@ export default function ContactForm() {
         {/* Form Container */}
         <div className="max-w-[1313px] mx-auto border border-gray-300 rounded-[30px] p-8 md:p-12 lg:p-16">
           {/* Section Title */}
-          <h2 className="text-[42px] leading-tight font-medium text-black text-center mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[42px] leading-tight font-medium text-black text-center mb-8 sm:mb-12 lg:mb-16">
             Get in Touch
           </h2>
           <form onSubmit={handleSubmit} className="space-y-8">
@@ -50,7 +50,7 @@ export default function ContactForm() {
                   placeholder="Enter Name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full text-2xl font-normal border-b-2 border-gray-300 pb-3 focus:outline-none focus:border-black transition-colors bg-transparent"
+                  className="w-full text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-normal border-b-2 border-gray-300 pb-2 sm:pb-3 focus:outline-none focus:border-black transition-colors bg-transparent"
                 />
               </div>
               <div className="space-y-2">
@@ -59,14 +59,14 @@ export default function ContactForm() {
                   placeholder="Enter Email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full text-2xl font-normal border-b-2 border-gray-300 pb-3 focus:outline-none focus:border-black transition-colors bg-transparent"
+                  className="w-full text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-normal border-b-2 border-gray-300 pb-2 sm:pb-3 focus:outline-none focus:border-black transition-colors bg-transparent"
                 />
               </div>
             </div>
 
             {/* Lab Type Selection */}
             <div className="space-y-6">
-              <p className="text-2xl font-bold text-black">What are you looking for?</p>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold text-black">What are you looking for?</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {labOptions.map((lab) => (
@@ -81,7 +81,7 @@ export default function ContactForm() {
                         <div className="w-4 h-4 bg-white rounded-full" />
                       )}
                     </div>
-                    <span className="text-[21px] font-normal text-black">{lab}</span>
+                    <span className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-[21px] font-normal text-black">{lab}</span>
                   </label>
                 ))}
               </div>
@@ -94,7 +94,7 @@ export default function ContactForm() {
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 rows={3}
-                className="w-full text-2xl font-normal border-b-2 border-gray-300 pb-3 focus:outline-none focus:border-black transition-colors bg-transparent resize-none"
+                className="w-full text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-normal border-b-2 border-gray-300 pb-2 sm:pb-3 focus:outline-none focus:border-black transition-colors bg-transparent resize-none"
               />
             </div>
 
@@ -102,9 +102,9 @@ export default function ContactForm() {
             <div className="flex justify-center pt-4">
               <button
                 type="submit"
-                className="px-12 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors"
+                className="px-6 sm:px-8 md:px-10 lg:px-12 py-2 sm:py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors"
               >
-                <span className="text-base font-semibold" style={{ letterSpacing: '-0.16px' }}>Submit</span>
+                <span className="text-sm sm:text-base font-semibold" style={{ letterSpacing: '-0.02em' }}>Submit</span>
               </button>
             </div>
           </form>

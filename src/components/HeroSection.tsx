@@ -4,7 +4,7 @@ import DSC02875HDR1 from '../assets/DSC02875-HDR-1.png';
 const heroSlides = [
 	{
 		id: 1,
-		image: "https://api.builder.io/api/v1/image/assets/TEMP/3d85562712d0aa37a6925d1f9a0888728c216784?width=3054",
+		image: DSC02875HDR1,
 		title: "Create your space for innovation",
 		description:
 			"Building a makerspace takes more than just machines. With 10+ years of experience, we help you create spaces that are easy to manage and designed to spark making from day one.",
@@ -35,7 +35,7 @@ export default function HeroSection() {
 	const currentHero = heroSlides[currentSlide];
 
 	return (
-		<section className="relative w-full h-[792px] overflow-hidden mt-[107px]">
+		<section className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[792px] overflow-hidden mt-[107px]">
 			{/* Blue accent line */}
 			<div className="absolute top-0 left-0 right-0 h-1 bg-[#2C4ABE] z-10" />
 
@@ -55,19 +55,19 @@ export default function HeroSection() {
 			<div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/20 to-transparent" />
 
 			{/* Content */}
-			<div className="relative z-10 max-w-[1512px] mx-auto px-6 lg:px-[100px] h-full flex flex-col justify-center">
-				<div className="max-w-[537px]">
+			<div className="relative z-10 max-w-[1512px] mx-auto px-4 sm:px-6 lg:px-[100px] h-full flex flex-col justify-center">
+				<div className="max-w-full sm:max-w-[400px] md:max-w-[500px] lg:max-w-[537px]">
 					<h1
-						className="text-[54px] leading-tight font-medium text-white mb-6"
-						style={{ letterSpacing: "-0.54px" }}
+						className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[54px] leading-tight font-medium text-white mb-4 sm:mb-6"
+						style={{ letterSpacing: "-0.02em" }}
 					>
 						{currentHero.title}
 					</h1>
-					<p className="text-[32px] leading-[44px] font-normal text-white mb-8">
+					<p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-[32px] leading-relaxed sm:leading-[44px] font-normal text-white mb-6 sm:mb-8">
 						{currentHero.description}
 					</p>
 					{currentHero.showButton && (
-						<button className="bg-black text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-800 transition-colors">
+						<button className="bg-black text-white px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-4 rounded-full text-sm sm:text-base lg:text-lg font-medium hover:bg-gray-800 transition-colors">
 							{currentHero.buttonText}
 						</button>
 					)}

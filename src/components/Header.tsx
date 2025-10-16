@@ -6,11 +6,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="h-[29px] w-[137px] bg-gray-200 rounded flex items-center justify-center overflow-hidden">
-              <img 
-                src="https://api.builder.io/api/v1/image/assets/TEMP/2ba75a5abfcdce2ba901820f4e70ec0540547a48?width=524" 
-                alt="Karkhana Hub Logo"
-                className="h-auto w-auto object-contain"
-              />
+              <span className="text-sm font-bold text-gray-600">Karkhana Hub</span>
             </div>
           </div>
 

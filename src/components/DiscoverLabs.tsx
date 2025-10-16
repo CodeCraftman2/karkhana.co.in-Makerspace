@@ -99,12 +99,12 @@ export default function DiscoverLabs() {
     <section className="py-16 md:py-24 bg-white" id="discover-labs">
       <div className="max-w-[1512px] mx-auto px-6 lg:px-[100px]">
         {/* Section Title */}
-        <h2 className="text-[54px] leading-[75px] font-medium text-black mb-16" style={{ letterSpacing: '-0.54px' }}>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[54px] leading-tight font-medium text-black mb-8 sm:mb-12 lg:mb-16" style={{ letterSpacing: '-0.02em' }}>
           Discover Our Labs
         </h2>
 
         {/* Labs Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-2 sm:gap-x-4 lg:gap-x-6 gap-y-4 sm:gap-y-6 lg:gap-y-8 xl:gap-y-12 mb-6 sm:mb-8 lg:mb-12">
           {labs.slice(0, visibleCount).map((lab) => (
             <LabCard
               key={lab.id}
@@ -121,9 +121,9 @@ export default function DiscoverLabs() {
           <div className="flex justify-center">
             <button
               onClick={handleViewMore}
-              className="px-12 py-4 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors"
+              className="px-6 sm:px-8 md:px-10 lg:px-12 py-2 sm:py-3 lg:py-4 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors"
             >
-              <span className="text-2xl leading-6 font-normal text-black">View More</span>
+              <span className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-6 font-normal text-black">View More</span>
             </button>
           </div>
         )}

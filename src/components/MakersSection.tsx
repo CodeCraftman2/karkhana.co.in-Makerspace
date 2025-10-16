@@ -49,7 +49,7 @@ export default function MakersSection() {
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-[1512px] mx-auto px-6 lg:px-[100px]">
         {/* Section Title */}
-        <h2 className="text-[42px] leading-tight font-medium text-black mb-12">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[42px] leading-tight font-medium text-black mb-6 sm:mb-8 lg:mb-12">
           Makers in our Makerspace
         </h2>
 
@@ -66,7 +66,7 @@ export default function MakersSection() {
                   <div className="w-full aspect-[307/337] bg-gray-200 rounded-[20px]" />
                   
                   {/* Name */}
-                  <h3 className="text-lg font-medium text-black">
+                  <h3 className="text-sm sm:text-base md:text-lg font-medium text-black">
                     {maker.name}
                   </h3>
                 </div>

@@ -19,7 +19,7 @@ export default function LabCard({ title, description, image, link, onClick }: La
       onClick={handleClick}
     >
       {/* Image Container */}
-      <div className="w-full aspect-[338/384] bg-gray-200 rounded-[20px] overflow-hidden mb-6">
+      <div className="w-full aspect-[338/384] bg-gray-200 rounded-[10px] sm:rounded-[15px] lg:rounded-[20px] overflow-hidden mb-2 sm:mb-3 md:mb-4 lg:mb-6">
         {image && (
           <img 
             src={image} 
@@ -30,12 +30,12 @@ export default function LabCard({ title, description, image, link, onClick }: La
       </div>
 
       {/* Title */}
-      <h3 className="text-[28px] leading-[44px] font-medium text-black mb-2">
+      <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] leading-tight font-medium text-black mb-1">
         {title}
       </h3>
 
       {/* Description */}
-      <p className="text-lg leading-6 font-normal text-black mb-3">
+      <p className="text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed font-normal text-black mb-1 sm:mb-2">
         {description}
       </p>
 
@@ -43,7 +43,7 @@ export default function LabCard({ title, description, image, link, onClick }: La
       {link && (
         <a 
           href={link}
-          className="text-lg leading-6 font-normal text-black hover:opacity-70 transition-opacity"
+          className="text-sm sm:text-base md:text-lg leading-relaxed font-normal text-black hover:opacity-70 transition-opacity"
           onClick={(e) => e.stopPropagation()}
         >
           {link}
