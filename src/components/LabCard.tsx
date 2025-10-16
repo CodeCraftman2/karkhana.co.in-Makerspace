@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface LabCardProps {
   title: string;
   description: string;
@@ -41,13 +43,13 @@ export default function LabCard({ title, description, image, link, onClick }: La
 
       {/* Link */}
       {link && (
-        <a 
-          href={link}
+        <Link 
+          to="/membership"
           className="text-sm sm:text-base md:text-lg leading-relaxed font-normal text-black hover:opacity-70 transition-opacity"
           onClick={(e) => e.stopPropagation()}
         >
           {link}
-        </a>
+        </Link>
       )}
     </div>
   );

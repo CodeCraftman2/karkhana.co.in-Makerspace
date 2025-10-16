@@ -55,6 +55,13 @@
     --brand-blue: 225 64% 46%;
     --brand-yellow: 44 100% 54%;
     --brand-green: 154 60% 50%;
+    
+    /* Karkhana Colors */
+    --karkhana-blue: 225 64% 46%;
+    --karkhana-coral: 0 84% 60%;
+    --karkhana-coral-light: 0 84% 70%;
+    --karkhana-gray: 0 0% 46%;
+    --karkhana-gray-light: 0 0% 85%;
   }
 
   .dark {

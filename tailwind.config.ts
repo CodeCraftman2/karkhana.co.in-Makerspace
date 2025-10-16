@@ -66,6 +66,13 @@ export default {
           yellow: "hsl(var(--brand-yellow))",
           green: "hsl(var(--brand-green))",
         },
+        karkhana: {
+          blue: "hsl(var(--karkhana-blue))",
+          coral: "hsl(var(--karkhana-coral))",
+          "coral-light": "hsl(var(--karkhana-coral-light))",
+          gray: "hsl(var(--karkhana-gray))",
+          "gray-light": "hsl(var(--karkhana-gray-light))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
